@@ -1,22 +1,47 @@
-# Proyecto Final - Entrega 3
+# Proyecto Final - Antonio Lamark Abogado Penalista
 
-Este repositorio contiene la versión final preparada para la Entrega 3 basada en la *consigna* y el *diseño entregado*.
-Implementación hecha para el diseño que subiste (archivo `diseño web.pdf`).
-
-**Archivos principales**:
-- `index.html` — página principal con estructura semántica (header, main, sections, footer).
-- `scss/` — archivos SCSS (variables, mixins, base, layout, components, main.scss).
-- `css/style.css` — CSS compilado listo para usar.
-- `js/script.js` — funcionalidades simples (validación básica del formulario).
-- `assets/img/` — imágenes SVG de apoyo (hero, profile).
-
-**Puntos cumplidos (consigna)**:
-- Estructura HTML limpia y semántica.
-- Uso de Bootstrap para la maquetación (grid + utilidades).
-- SCSS con variables, mixins, nesting, placeholder (`%`), extend, loops (`@for`) y media queries.
-- Estilos avanzados con transiciones y animaciones (keyframes + hover effects).
-- Archivos listos para subir a GitHub (incluye `.gitignore`).
+Este es el **Proyecto Final de Desarrollo Web**, correspondiente a la Entrega 3.  
+El objetivo fue crear una página web responsive, utilizando **HTML semántico, SCSS, Bootstrap, animaciones y GitHub Actions** para compilar estilos automáticamente.
 
 ---
 
-Sigue las instrucciones del archivo `docs/GITHUB_PUSH_STEPS.md` para subir este proyecto a GitHub con historial de commits incluido.
+## 🚀 Tecnologías utilizadas
+- HTML5 con etiquetas semánticas
+- SCSS (variables, nesting, mixins, extend, animaciones)
+- Bootstrap 5 (grid, utilidades, responsive)
+- Bootstrap Icons
+- Git y GitHub
+- GitHub Actions para compilar SCSS automáticamente
+
+---
+
+## 📋 Requisitos de la consigna
+
+- [x] **HTML estructurado** (header, main, section, article, footer)
+- [x] **Estilos con SCSS** (variables, nesting, mixins, extend, operadores, animaciones)
+- [x] **Diseño Responsive** (mobile + desktop con Bootstrap Grid y media queries)
+- [x] **Uso de imágenes** (logo, fondo en hero, martillo en contacto)
+- [x] **Footer completo** (logo, dirección, teléfono, email, redes sociales)
+- [x] **Repositorio en GitHub** con historial de commits
+- [x] **README.md documentado**
+- [x] **GitHub Actions** para compilar SCSS
+
+---
+
+## 📂 Estructura del proyecto
+├── assets/
+│ └── img/ # imágenes (logo, hero, martillo, fondo, etc.)
+├── css/
+│ └── style.css # compilado desde SCSS
+├── scss/
+│ ├── _variables.scss
+│ ├── _components.scss
+│ ├── _layout.scss
+│ └── main.scss
+├── js/
+│ └── script.js
+├── index.html
+├── README.md
+└── .github/
+└── workflows/
+└── compile-scss.yml

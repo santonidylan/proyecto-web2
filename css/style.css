@@ -4,3 +4,4 @@
 .site-header{background:#fff}.hero{padding:3rem 0}.hero .hero-text{max-width:560px}.hero .text-accent{color:var(--accent)}.service-card{transition:transform .25s ease,box-shadow .25s ease}.service-card:hover{transform:translateY(-6px);box-shadow:0 8px 24px rgba(0,0,0,.08)}.btn-custom{display:inline-block;padding:.65rem 1rem;border-radius:.375rem;font-weight:600;text-align:center;background:var(--primary);color:#fff;transition:transform .12s ease}.btn-custom:hover{transform:translateY(-3px)}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.fade-up{animation:fadeUp .6s ease both}.stat{padding:1rem 0}.stat-number{font-weight:800;font-size:1.5rem}.contact-info{line-height:1.35}
 @media (max-width:991px){.hero{text-align:center}.hero .hero-visual{display:none!important}}
 @media (max-width:767px){.hero{padding:2rem 0}}
+

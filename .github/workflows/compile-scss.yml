@@ -1,0 +1,22 @@
+name: Compile SCSS
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repo
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Compilar SCSS a CSS
+        run: |
+          npx --yes sass scss/main.scss css/style.css --no-source-map --style=compressed

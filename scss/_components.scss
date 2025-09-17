@@ -14,7 +14,7 @@
 .btn-custom {
   @extend %btn-base;
   background: $primary;
-  color: #fff;
+  color: #ffffff;
   transition: transform .12s ease;
   &:hover { transform: translateY(-3px); }
 }
@@ -31,3 +31,47 @@
   to { opacity:1; transform: translateY(0); }
 }
 .fade-up { animation: fadeUp .6s ease both; }
+
+.btn-primary {
+  background-color: $orange;
+  border-color: $orange;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($orange, 10%); // un poco más oscuro al pasar el mouse
+    border-color: darken($orange, 12%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 123, 0, 0.4); // efecto naranja en focus
+  }
+}
+.text-accent {
+  color: $orange;
+}
+
+a {
+  color: $orange;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-primary {
+  background-color: $orange;
+  border-color: $orange;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($orange, 10%);
+    border-color: darken($orange, 12%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 123, 0, 0.4);
+  }
+}
+
+.text-accent {
+  color: $orange;
+}
