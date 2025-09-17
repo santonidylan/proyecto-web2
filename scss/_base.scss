@@ -1,0 +1,7 @@
+@import 'variables';
+
+// Base & typography
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: $font-stack; color:#222; }
+a { color: $primary; text-decoration: none; }
+.container { max-width: $max-width; margin: 0 auto; padding: 0 1rem; }

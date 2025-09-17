@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+
+// Placeholder for reuse
+%btn-base {
+  display: inline-block;
+  padding: .65rem 1rem;
+  border-radius: .375rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+// Buttons
+.btn-custom {
+  @extend %btn-base;
+  background: $primary;
+  color: #fff;
+  transition: transform .12s ease;
+  &:hover { transform: translateY(-3px); }
+}
+
+// Stats with loop
+.stats { display:flex; gap:1rem; }
+@for $i from 1 through 4 {
+  .stat-#{$i} { flex: 1 1 (100% / 4); }
+}
+
+// Animations
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(12px); }
+  to { opacity:1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp .6s ease both; }
