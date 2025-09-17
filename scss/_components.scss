@@ -57,21 +57,4 @@ a {
   }
 }
 
-.btn-primary {
-  background-color: $orange;
-  border-color: $orange;
-  color: #fff;
 
-  &:hover {
-    background-color: darken($orange, 10%);
-    border-color: darken($orange, 12%);
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255, 123, 0, 0.4);
-  }
-}
-
-.text-accent {
-  color: $orange;
-}
