@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Proyecto Final</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- META ETIQUETAS SEO Y OG -->
+  <meta name="description" content="Contactanos por consultas, presupuestos o asesoramiento personalizado.">
+  <meta name="keywords" content="contacto, formulario, asesoramiento, presupuesto, diseño web">
+  <meta name="author" content="Tu Nombre">
+  <link rel="canonical" href="https://tuusuario.github.io/tu-repo/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto - MiProyecto">
+  <meta property="og:description" content="Envíanos tu mensaje o consultanos sobre tu próximo proyecto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuusuario.github.io/tu-repo/contact.html">
+  <meta property="og:image" content="assets/img/og-image.png">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">MiProyecto</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact">
+      <h1>Contacto</h1>
+      <div class="two-col">
+        <form class="contact-form">
+          <label for="name">Nombre</label>
+          <input id="name" type="text" required>
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" required>
+          <label for="message">Mensaje</label>
+          <textarea id="message" rows="5" required></textarea>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <aside>
+          <h2>Datos de contacto</h2>
+          <p><strong>Email:</strong> contacto@ejemplo.com</p>
+          <p><strong>Teléfono:</strong> +54 9 11 5555 5555</p>
+          <p><strong>Dirección:</strong> Calle Falsa 123, Buenos Aires</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MiProyecto - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

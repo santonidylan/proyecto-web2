@@ -5,3 +5,18 @@
 html,body { height:100%; margin:0; font-family: $font-stack; color:#222; }
 a { color: $primary; text-decoration: none; }
 .container { max-width: $max-width; margin: 0 auto; padding: 0 1rem; }
+
+/* ADDED_BY_ASSISTANT: Parcial añadido automáticamente */
+@import 'variables';
+html { box-sizing: border-box; font-size: 16px; }
+*, *:before, *:after { box-sizing: inherit; }
+body {
+  font-family: $fuente-sans;
+  margin: 0;
+  color: #222;
+  background: $gris-claro;
+  -webkit-font-smoothing: antialiased;
+}
+.container { @include container(); }
+a { color: $color-primario; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }

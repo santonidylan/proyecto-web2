@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Proyecto Final</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- META ETIQUETAS SEO Y OG -->
+  <meta name="description" content="Conocé a nuestro equipo, misión y visión. Comprometidos con la innovación y el diseño web de calidad.">
+  <meta name="keywords" content="nosotros, equipo, misión, visión, desarrollo web">
+  <meta name="author" content="Tu Nombre">
+  <link rel="canonical" href="https://tuusuario.github.io/tu-repo/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nosotros - MiProyecto">
+  <meta property="og:description" content="Somos un equipo de desarrollo web enfocado en innovación y resultados.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuusuario.github.io/tu-repo/about.html">
+  <meta property="og:image" content="assets/img/team.svg">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">MiProyecto</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html" class="active">Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container about">
+      <h1>Quiénes somos</h1>
+      <div class="two-col">
+        <div>
+          <p>Somos un equipo apasionado por el diseño web y el desarrollo front-end. Creemos en la innovación y en la calidad como pilares de cada proyecto.</p>
+          <h2>Misión</h2>
+          <p>Ofrecer soluciones digitales creativas y funcionales que impulsen a nuestros clientes.</p>
+          <h2>Visión</h2>
+          <p>Ser referentes en el ámbito del desarrollo web y el diseño UX/UI.</p>
+        </div>
+        <aside>
+          <img src="assets/img/team.svg" alt="Nuestro equipo de trabajo">
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MiProyecto - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

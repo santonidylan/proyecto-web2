@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Proyecto Final</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- META ETIQUETAS SEO Y OG -->
+  <meta name="description" content="Servicios profesionales de diseño UX/UI, desarrollo web y optimización SEO.">
+  <meta name="keywords" content="servicios, diseño UX, desarrollo web, SEO, optimización, SASS">
+  <meta name="author" content="Tu Nombre">
+  <link rel="canonical" href="https://tuusuario.github.io/tu-repo/services.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Servicios - MiProyecto">
+  <meta property="og:description" content="Diseño UX/UI, desarrollo web y optimización SEO adaptados a tus necesidades.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuusuario.github.io/tu-repo/services.html">
+  <meta property="og:image" content="assets/img/icon1.svg">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">MiProyecto</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="services.html" class="active">Servicios</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container services">
+      <h1>Nuestros servicios</h1>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Diseño UX/UI</h3>
+          <p>Diseños centrados en el usuario, con interfaces funcionales y modernas.</p>
+        </article>
+        <article class="card">
+          <h3>Desarrollo web</h3>
+          <p>Implementación de sitios web responsivos con HTML5, CSS3 y SASS.</p>
+        </article>
+        <article class="card">
+          <h3>Optimización SEO</h3>
+          <p>Mejoramos la visibilidad de tu sitio en los motores de búsqueda.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MiProyecto - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
